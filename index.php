@@ -1,7 +1,7 @@
 <?php 
 
     $badword = $_GET["bad"];
-    $stringa = 'Nessuno usa mai Do Wile, e che cazzo';
+    $stringa = 'Nessuno usa mai Do While, e che cazzo';
     $len_stringa = strlen($stringa);
     
     $ex_stringa = explode(' ', $stringa);
