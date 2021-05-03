@@ -9,6 +9,9 @@
     if( in_array ($badword, $ex_stringa)){
         $nuova_stringa = str_replace( $badword, '***', $stringa);
     }
+    else{
+        $nuova_stringa = 'non ci sono badwords';
+    }
 
 ?>
 
@@ -21,6 +24,7 @@
         <title>Document</title>
     </head>
     <body>
-        <h1> <?php echo $nuova_stringa; echo ' '.$len_stringa; ?> </h1>
+        <h1> <?php echo $nuova_stringa; ?> </h1>
+        <p> <?php echo $stringa; echo ' '.$len_stringa; ?> </p>
     </body>
 </html>
